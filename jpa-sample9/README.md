@@ -1,0 +1,3 @@
+- @OneToMany relationship: A class can have multiple students, so it is a one to many relationship from class perspective.
+- Since many students can be present in one class so it is a @ManyToOne relationship from student perspective.
+- Since class_id is a foreign column for person table so @JoinColumn is mentioned in person class.

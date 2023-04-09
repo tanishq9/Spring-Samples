@@ -1,0 +1,2 @@
+- Use inbuilt validation annotations provided in javax and hibernate packages.
+- Exception handling using @ControllerAdvice and @ExceptionHandler.

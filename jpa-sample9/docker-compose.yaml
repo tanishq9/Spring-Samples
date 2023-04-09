@@ -1,0 +1,21 @@
+# Use this when using MySQL docker image for testing purpose and not H2DB
+version: '3.1'
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - "./src/main/resources/data:/docker-entrypoint-initdb.d" # init script
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: contactsdb
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: test
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
