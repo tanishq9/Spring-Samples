@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "3aa6f728-bd80-438a-8cc4-144f1fabd454",
+		"name": "Spring Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sam@gmail.com\",\n    \"pwd\": \"123\",\n    \"role\": \"user\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJUbjB6bTR2emJNYTBYVTNsaGJjUE44bC1aS1dyanNpVkdRNk04dUVrcEtjIn0.eyJleHAiOjE2OTE4NjY3MDgsImlhdCI6MTY5MTg2NjQwOCwiYXV0aF90aW1lIjoxNjkxODY2MzcyLCJqdGkiOiI1ZDgyODBjMi0xZmJjLTRkYjktYjdhNy1lOTUyZmEyMjYwOTgiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgxODAvcmVhbG1zL2JhbmtkZXYiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZmFiZWFjOWMtNGJmZS00M2I4LWE2MjktMmVmM2NmZmZiYmVmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFua2FwaXVpIiwic2Vzc2lvbl9zdGF0ZSI6IjJkODM0ZDc3LTJkZGUtNGRjYy04NTJkLTFjYTIyOWEwZDI4ZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYmFua2RldiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMmQ4MzRkNzctMmRkZS00ZGNjLTg1MmQtMWNhMjI5YTBkMjhkIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJoYXBweSBleGFtcGxlIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaGFwcHlAZXhhbXBsZS5jb20iLCJnaXZlbl9uYW1lIjoiaGFwcHkiLCJmYW1pbHlfbmFtZSI6ImV4YW1wbGUiLCJlbWFpbCI6ImhhcHB5QGV4YW1wbGUuY29tIn0.vn8S7ANLAUyqgpRvafuXserOMfmEp2WLyQvcP6UPW5ETxTWw_6mxGCz7XwqOlWpq4mKDcKk1sMIS-3KKZbD90UhRf9mgpHkTlbzIKKQKRVTRPxRuyk8XNvxXHxJdc9qMVK_kDqM0S0kst61cB3QrBRqwhRBJE2Isa_1gGqBDCsnE4yXgIYSHfso5jwxC5fGqk481i5XGaDUmmmQCloj2b4fvFnoUYwlW7OuF7eUscKH1WwmkIax2Npt__tV-7ILSz5SjgSw7E_3xLx2Mgv8jlFHrxxQxu_HIDeESuqEMjhyYwXqFefQeEjVmqtQZo6F834Kcu5DUCoqzovqfBZ0u2g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/myAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loan Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJUbjB6bTR2emJNYTBYVTNsaGJjUE44bC1aS1dyanNpVkdRNk04dUVrcEtjIn0.eyJleHAiOjE2OTE4NjY3MDgsImlhdCI6MTY5MTg2NjQwOCwiYXV0aF90aW1lIjoxNjkxODY2MzcyLCJqdGkiOiI1ZDgyODBjMi0xZmJjLTRkYjktYjdhNy1lOTUyZmEyMjYwOTgiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgxODAvcmVhbG1zL2JhbmtkZXYiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZmFiZWFjOWMtNGJmZS00M2I4LWE2MjktMmVmM2NmZmZiYmVmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFua2FwaXVpIiwic2Vzc2lvbl9zdGF0ZSI6IjJkODM0ZDc3LTJkZGUtNGRjYy04NTJkLTFjYTIyOWEwZDI4ZCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtYmFua2RldiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMmQ4MzRkNzctMmRkZS00ZGNjLTg1MmQtMWNhMjI5YTBkMjhkIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJoYXBweSBleGFtcGxlIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaGFwcHlAZXhhbXBsZS5jb20iLCJnaXZlbl9uYW1lIjoiaGFwcHkiLCJmYW1pbHlfbmFtZSI6ImV4YW1wbGUiLCJlbWFpbCI6ImhhcHB5QGV4YW1wbGUuY29tIn0.vn8S7ANLAUyqgpRvafuXserOMfmEp2WLyQvcP6UPW5ETxTWw_6mxGCz7XwqOlWpq4mKDcKk1sMIS-3KKZbD90UhRf9mgpHkTlbzIKKQKRVTRPxRuyk8XNvxXHxJdc9qMVK_kDqM0S0kst61cB3QrBRqwhRBJE2Isa_1gGqBDCsnE4yXgIYSHfso5jwxC5fGqk481i5XGaDUmmmQCloj2b4fvFnoUYwlW7OuF7eUscKH1WwmkIax2Npt__tV-7ILSz5SjgSw7E_3xLx2Mgv8jlFHrxxQxu_HIDeESuqEMjhyYwXqFefQeEjVmqtQZo6F834Kcu5DUCoqzovqfBZ0u2g",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/myLoans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myLoans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KeyCloak Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "bankapi",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "DbPWwBF8tDABxFr6obRe8ypqspWGdmqe",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "openid email profile address",
+							"type": "default"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8180/realms/bankdev/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"realms",
+						"bankdev",
+						"protocol",
+						"openid-connect",
+						"token"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KeyCloak Get Token Using Auth Code",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "bankapiui",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "qPeSuMlsq8dNxPBPGZM5xF218WI7pnjh",
+							"type": "default"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "default"
+						},
+						{
+							"key": "code",
+							"value": "7f40bc85-8aae-4eb6-b0ca-385d5532aedd.2d834d77-2dde-4dcc-852d-1ca229a0d28d.5467411d-28bd-4fa4-8590-2f0ce6581ab2",
+							"type": "default"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:7080/sample",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8180/realms/bankdev/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"realms",
+						"bankdev",
+						"protocol",
+						"openid-connect",
+						"token"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KeyCloak Get Auth Code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic am9obmRvZUBleGFtcGxlLmNvbToxMjM=",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8180/realms/bankdev/protocol/openid-connect/auth?client_id=bankapiui&response_type=code&scope=openid&redirect_uri=http://localhost:7080/sample&grant_type=authorization_code&state=asjkasnmasdl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"realms",
+						"bankdev",
+						"protocol",
+						"openid-connect",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "bankapiui"
+						},
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "scope",
+							"value": "openid"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:7080/sample"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code"
+						},
+						{
+							"key": "state",
+							"value": "asjkasnmasdl"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
